@@ -1,6 +1,6 @@
-from machine_learning import model as m
-from machine_learning import layer as l
-from machine_learning.utilities import img as im
+from UFE import model as m
+from UFE import layer as l
+from UFE.utilities import img as im
 import numpy as np
 import time
 import pickle
@@ -84,7 +84,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
 print(f"Img: mean={np.mean(imgs)}, max={np.max(imgs)}, min={np.min(imgs)}")
 
 # Set up model
-SAVE_PATH = "./machine_learning/tests/model"
+SAVE_PATH = "./UFE/tests/model"
 
 layer = l.CNN(input_shape=(2, 32 - 3 + 1, 32 - 3 + 1), kernel_size=3, num_kernel=20, padding=False)
 model = m.model(layers=[

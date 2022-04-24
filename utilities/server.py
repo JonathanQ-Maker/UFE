@@ -10,7 +10,7 @@ class ConsoleServer(HTTPServer):
     def __init__(self, 
                  server_address=("192.168.1.74", 8080), 
                  index_name="ConsoleIndex.html", 
-                 resource_path="./machine_learning/utilities/resource/",
+                 resource_path="./UFE/utilities/resource/",
                  name="Python Console",
                  console_capacity=100):
         super().__init__(server_address, ConsoleServerHandler)

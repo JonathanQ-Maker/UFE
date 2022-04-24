@@ -3,8 +3,8 @@ import signal
 import CNN
 import scipy.signal as sp
 import time
-from machine_learning import layer as l
-from machine_learning import model as m
+from UFE import layer as l
+from UFE import model as m
 
 def cnn_to_dense(): 
     step = 0.01

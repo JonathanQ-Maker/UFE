@@ -1,4 +1,4 @@
-from machine_learning import layer as l
+from UFE import layer as l
 import importlib
 import numpy as np
 
@@ -71,7 +71,7 @@ class model:
         layers = data["layers"]
         self.layers = []
         for layer in layers:
-            layer_class = getattr(importlib.import_module("machine_learning.layer"), layer["type"])
+            layer_class = getattr(importlib.import_module("UFE.layer"), layer["type"])
             layer_instance = layer_class()
             layer_instance.populate(layer)
             self.layers.append(layer_instance)
